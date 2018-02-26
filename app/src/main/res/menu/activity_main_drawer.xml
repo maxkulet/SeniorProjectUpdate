@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    tools:showIn="navigation_view"
+    >
+
+
+
+
+
+    <item android:title="@string/power_on"
+        android:id="@+id/poweron">
+    <menu>
+        <item
+            android:id="@+id/step1_on"
+            android:icon="@drawable/search"
+            android:title="@string/step1_on" />
+
+        <item
+            android:id="@+id/step2_on"
+            android:icon="@drawable/security"
+            android:title="@string/step2_on" />
+        <item
+            android:id="@+id/step3_on"
+            android:icon="@drawable/identify"
+            android:title="@string/step3_on" />
+        <item
+            android:id="@+id/step4_on"
+            android:icon="@drawable/network"
+            android:title="@string/step4_on" />
+        <item
+            android:id="@+id/step5_on"
+            android:icon="@drawable/signal"
+            android:title="@string/step5_on" />
+        <item
+            android:id="@+id/step6_on"
+            android:icon="@drawable/legal"
+            android:title="@string/step6_on" />
+        <item
+            android:id="@+id/step7_on"
+            android:icon="@drawable/perform"
+            android:title="@string/step7_on" />
+        <item
+            android:id="@+id/step8_on"
+            android:icon="@drawable/validate"
+            android:title="@string/step8_on" />
+        <item
+            android:id="@+id/step9_on"
+            android:icon="@drawable/report"
+            android:title="@string/step9_on" />
+    </menu>
+    </item>
+
+    <item android:title="@string/power_off">
+        <menu>
+            <item
+                android:id="@+id/step1_off"
+                android:icon="@drawable/search"
+                android:title="@string/step1_off" />
+            <item
+                android:id="@+id/step2_off"
+                android:icon="@drawable/identify"
+                android:title="@string/step2_off" />
+            <item
+                android:id="@+id/step3_off"
+                android:icon="@drawable/legal"
+                android:title="@string/step3_off" />
+            <item
+                android:id="@+id/step4_off"
+                android:icon="@drawable/sd"
+                android:title="@string/step4_off" />
+            <item
+                android:id="@+id/step5_off"
+                android:icon="@drawable/battery"
+                android:title="@string/step5_off" />
+            <item
+                android:id="@+id/step6_off"
+                android:icon="@drawable/sim"
+                android:title="@string/step6_off" />
+            <item
+                android:id="@+id/step7_off"
+                android:icon="@drawable/perform"
+                android:title="@string/step7_off" />
+            <item
+                android:id="@+id/step8_off"
+                android:icon="@drawable/validate"
+                android:title="@string/step8_off" />
+            <item
+                android:id="@+id/step9_off"
+                android:icon="@drawable/report"
+                android:title="@string/step9_on" />
+        </menu>
+
+    </item>
+</menu>

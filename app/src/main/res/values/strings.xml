@@ -1,0 +1,379 @@
+<resources>
+    <string name="app_name">TriagingApp</string>
+    <string name="title_home">Home</string>
+    <string name="about">About</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+
+    <string name="power_on">POWER ON</string>
+    <string name="step1_on">Look for DNA on the Device</string>
+    <string name="step2_on">Check for Security</string>
+    <string name="step3_on">Identify What You Have</string>
+    <string name="step4_on">Isolate the Network</string>
+    <string name="step5_on">Signal Blocking Mesh or Bags</string>
+    <string name="step6_on">Obtain Legal Process</string>
+    <string name="step7_on">Perform Extraction</string>
+    <string name="step8_on">Validate Findings</string>
+    <string name="step9_on">Report</string>
+    <string name="summary_on">Summary Power On</string>
+
+
+
+    <string name="power_off">POWER OFF</string>
+    <string name="step1_off">Look for DNA on the Device</string>
+    <string name="step2_off">Identify What You Have</string>
+    <string name="step3_off">Obtain Legal Process</string>
+    <string name="step4_off">Remove Media and SIM </string>
+    <string name="step5_off">Charge the Battery</string>
+    <string name="step6_off">Consider Forensic SIM</string>
+    <string name="step7_off">Perform Extraction</string>
+    <string name="step8_off">Validate Findings</string>
+    <string name="step9_off">Report</string>
+
+    <string name="introduction">
+        This app allows police officers to collect evidence and also to ensure that the evidence is
+        not destroyed or altered. At this point, the collection is the only thing going on - not the
+        actual search. </string>
+    <string name="title"> Mobile Triage Guide</string>
+    <string name="intro">Sponsor by Detective</string>
+    <string name="home">Home</string>
+    <string name="status">Device Status</string>
+    <string name="on">ON</string>
+    <string name="off">OFF</string>
+    <string name="start">Start</string>
+    <string name="warning1">
+    <![CDATA[<i><font color=#ff0000>Always consult legal advisor or supervisor with forensic background before proceeding.
+</i>]]></string>
+    <string name="warning2">
+    <![CDATA[<i><font color=#ff0000>Please choose Your Device Status!
+</i>]]></string>
+    <string name="warning3">
+    <![CDATA[<i><font color=#ff0000>Please Choose Your Option!
+</i>]]></string>
+    <string name="warn_message">
+    <![CDATA[<font color=#ff0000>WARNING!!!
+
+    ]]></string>
+    <string name="warn_message4">
+    <![CDATA[<i><font color=#ff0000>Proceeding further is intended for forensic personnel or consult
+        your supervisor for further directions.!!!
+   </i> ]]></string>
+    <string name="warn_message5">
+    <![CDATA[<i><font color=#ff0000>  If situation is exigent (i.e. missing child, recent murder,
+    etc.) consult your supervisor for which items may be needed
+    first such as call history details, messages, etc..!!!
+   </i> ]]></string>
+
+    <!-- TODO: STEP 1 POWER ON -->
+    <string name="content1_step1_on">Does the device has any visible DNA that needs to be swabbed such as blood, fingerprints, etc?</string>
+    <string name="content2_step1_on">
+    <![CDATA[<i><font color=#ff0000>Swab and collect DNA before proceeding with anything else.
+    </i>
+    ]]></string>
+    <string name="content3_step1_on">
+    <![CDATA[<i><font color=#ff0000>Once completed, move on to step 2.
+</i>
+    ]]></string>
+
+    <!-- TODO: STEP 2 POWER ON -->
+    <string name="content1_step2_on">Does the device have user enabled security such as pin, a gesture, or a passcode?</string>
+    <string name="content2_step2_on">Power off the device and collect it for further examination by trained investigator</string>
+    <string name="content3_step2_on">
+    <![CDATA[<i><font color=#ff0000>Proceeding further is intended for forensic personnel or contact your supervisor for further directions,
+    IF SITUATION IS EXIGENT THEN IMMEDIATELY CONTACT SUPERVISOR.
+    </i> ]]></string>
+    <string name="content4_step2_on">If possible, enable airplane mode internally before powering off.</string>
+    <string name="content5_step2_on">Remove backing and pull the battery.</string>
+    <string name="content6_step2_on">Hold screen lock button until power off option is displayed.</string>
+    <string name="content7_step2_on">If device cannot be powered down, pull SIM.</string>
+
+    <!-- TODO: STEP 3 POWER ON -->
+    <string name="content1_step3_on">Determine the make and model of the phone. Phone make and model can be found on a few areas:</string>
+    <string name="content2_step3_on">On the device, look for the make (iPhone, Samsung, etc) which is usually in bigger font, and the word “model” to find the model.
+</string>
+    <string name="content3_step3_on">If model is not visible from the outside, wait until a search warrant is obtained to pull the battery and search the inside.
+</string>
+    <string name="content4_step3_on">If the situation is not exigent, obtain pictures of the device for reference.
+</string>
+
+    <!-- TODO: STEP 4 POWER ON -->
+    <string name="content1_step4_on">Press home button located at the bottom of the screen once to open the lock screen
+    </string>
+    <string name="content2_step4_on">While screen is on, swipe finger from the bottom of the screen to the top to open the device’s Control Panel.
+</string>
+    <string name="content3_step4_on">Then tap the airplane shaped icon to enable Airplane Mode.
+</string>
+    <string name="content4_step4_on">Press home button located at the right of the screen until options are given.
+</string>
+    <string name="content5_step4_on">Then select “Power off” or “Airplane mode” depending on what your supervisor instructs you to do.
+</string>
+    <string name="content6_step4_on">Is the screen not accessible of is damaged?</string>
+    <string name="content7_step4_on">Select Operating System</string>
+    <string name="content8_step4_on"><![CDATA[<i><font color=#ff0000>Different OS’s may require
+    different steps to achieve the same results as Android so modify steps accordingly or contact
+    your supervisor for further directions.
+    </i> ]]></string>
+    <string name="content9_step4_on">Note: If the screen is not accessible of is damaged, Please proceed to next step</string>
+
+    <string name="content10_step4_on"><![CDATA[<b><font color=#000000>If Android has 7.0+ security patch, follow directions below.
+    </b> ]]></string>
+
+    <string name="content11_step4_on">Put device into “Download Mode” by holding Power button and selecting “Restart” twice.
+</string>
+    <string name="content12_step4_on">After selecting “restart” the second time, quickly hold down
+        the Volume Down + Home Button + Power Button at the same time until the phone begins to
+        reboot and hold until the screen shows the “Custom OS” screen.</string>
+    <string name="content13_step4_on">Select “Continue” using the Volume Buttons
+</string>
+    <string name="content14_step4_on">Once the next screen (Download Mode) appears, quickly press
+        the Volume Down + Home + Power Buttons again until “Maintenance Boot Mode” screen appears.
+</string>
+    <string name="content15_step4_on">Navigate using the Volume Buttons to previous step and then select using the Home Button</string>
+    <string name="content16_step4_on">If this technique cannot be applied, get the device into any
+        diagnostic mode (Download, Android Recovery, Maintenance, etc) and allow the phone to die
+        just so that the network can be isolated.
+</string>
+    <string name="description_image_1">This is an example</string>
+
+    <string-array name="OS_arrays">
+        <item>Choose Device OS</item>
+        <item>iPhone/iOS</item>
+        <item>Android OS</item>
+
+
+    </string-array>
+
+
+    <!-- TODO: Step 5 POWER ON -->
+    <string name="content1_step5_on">If internal settings are not accessible or cannot be used,
+        wrap device in faraday mesh or bags to isolate network.
+</string>
+    <string name="content2_step5_on">
+If faraday mesh/bags cannot be obtained, then wrap the device in a minimum of 3 layers of aluminum
+        foil or place device in an empty paint can with the lid closed to complete faraday.
+</string>
+    <string name="content3_step5_on">
+Make sure to test these methods out before implementing on live scenes to ensure its effectiveness.
+</string>
+    <string name="content4_step5_on">
+Combining methods is also encouraged to increase effectiveness.
+</string>
+
+
+    <!-- TODO: step 6 POWER ON -->
+    <string name="content2_step6_on">Investigator must obtain a search warrant to be able to search
+        through a phone’s contents legally if situation is not exigent. Consult legal advisor
+        about obtaining a legal warrant before proceeding to step 7.
+</string>
+
+    <!-- TODO: step 7 POWER ON -->
+    <string name="content1_step7_on"> With a live device, forensic personnel must attempt to
+        obtain both a physical and logical extraction if supported by the device.</string>
+
+    <!-- TODO: step 8 POWER ON -->
+    <string name="content1_step8_on"> Anything that is extracted off the device</string>
+    <string name="content2_step8_on"> be validated through secondary means because evidence such
+        as text messages can be “spoofed” and many examiners fail to perform this step. Suggestions for validation:
+</string>
+
+    <string name="content7_step8_on"><![CDATA[<b><font color=#ff0000>MUST
+    </b> ]]></string>
+
+    <string name="content3_step8_on">Use the GUI (Visual)</string>
+    <string name="content4_step8_on">Obtain a Call Detail Records (CDR)</string>
+    <string name="content5_step8_on"> Cross Validate</string>
+    <string name="content6_step8_on">Hand Carve</string>
+
+    <!-- TODO: step 9 POWER ON -->
+    <string name="content1_step9_on"> This report will be presented in court and will include many
+        of the items listed above. With “live” devices, the report must clearly articulate
+        what was done to preserve the evidence. </string>
+    <string name="content2_step9_on"> The legal portion of the report process is the number one
+        target that defense will go after because they will want to suppress it before it can be
+        presented before the jury. This is usually because defense doesn’t want incriminating texts,
+        images, or videos that may implicate their clients.
+</string>
+
+    <string name="content3_step9_on"><![CDATA[<b>Therefore, it is imperative to
+    establish a sound reporting process that will accurately convey your findings.
+    </b> ]]></string>
+    <string name="content4_step9_on"><![CDATA[<b><u><font color=#ff0000>Warning:
+    </u></b> ]]></string>
+
+    <!-- TODO: STEP 1 POWER OFF -->
+    <string name="content1_step1_off">
+        Does the device has any visible DNA that needs to be swabbed such as blood, fingerprints, etc?
+    </string>
+
+    <string name="content2_step1_off">
+    <![CDATA[<i><font color=#ff0000>Swab and collect DNA before proceeding with anything else.
+    </i>]]></string>
+
+    <string name="content3_step1_off">
+    <![CDATA[<i><font color=#ff0000>
+    Once completed, move on to step 2.
+    </i>]]></string>
+
+    <!-- TODO: STEP 2 POWER OFF -->
+    <string name="content1_step2_off">Determine the make and model of the phone. Phone make and model can be found on a few areas:
+    </string>
+    <string name="content2_step2_off">On the device, look for the make (iPhone, Samsung, etc) which is usually in bigger font, and the word “model” to find the model.
+    </string>
+    <string name="content3_step2_off">If model is not visible from the outside, wait until a search warrant is obtained to pull the battery and search the inside.
+    </string>
+    <string name="content4_step2_off">If the situation is not exigent, obtain pictures of the device for reference.
+    </string>
+
+    <!-- TODO: STEP 3 POWER OFF -->
+    <string name="content1_step3_off">
+    Investigator must obtain a search warrant to be able to search through a phone’s contents legally if situation is not exigent.
+    Consult legal advisor about obtaining a legal warrant before proceeding to step 4.
+    </string>
+
+    <!-- TODO: STEP 4 POWER OFF -->
+    <string name="content1_step4_off">
+        Photograph all components to the device(s), including the SIM and Micro-SD card if applicable.
+        These must be removed from device and processed independently so that they will not be influenced by the phone.
+    </string>
+
+    <string name="content2_step4_off">
+    <![CDATA[<i><font color=#ff0000>
+    To prevent any changes from being made to the Micro-SD, enable the write blocker option when imaging the SD card on forensic tools.
+    </i>]]></string>
+
+    <!-- TODO: STEP 5 POWER OFF -->
+    <string name="content1_step5_off">
+        If battery is removable, use a universal “probe” style charger and charge battery outside the phone.
+    </string>
+
+    <string name="content2_step5_off">
+    If battery is not removable or does not charge with universal charger, take caution when charging through the charging port of the phone.
+    </string>
+
+    <string name="content3_step5_off">
+    Charge through wall charger and NEVER charge through a USB computer port to prevent the phone from syncing to the computer and altering the contents.
+    </string>
+
+    <string name="content4_step5_off">
+    Also provide a means of faraday in case the device powers on.
+    </string>
+
+    <string name="content5_step5_off">
+    Devices such as Apple and Blackberry can turn on once they reach enough of a charge to trigger the boot process,
+    which can cause them to touch the network and other wireless exchanges (Wi-Fi, Bluetooth).
+    </string>
+
+
+    <!-- TODO: STEP 6 POWER OFF -->
+    <string name="content1_step6_off">
+    If you have researched the device and determined it is a GSM with the SIM present and removable,
+    a network isolation tool can be used to create a forensic SIM and isolate the network.
+    </string>
+
+    <string name="content2_step6_off">
+    The forensic SIM obtains the ICCID and IMSI and is placed into the suspect’s phone.
+    </string>
+
+    <string name="content3_step6_off">
+    This technique tricks the OS into seeing the original SIM, therefore keeping the stored data but also isolating the network.
+    </string>
+
+    <string name="content4_step6_off">
+    Many pay-as-you-go- devices do not have an internal feature that isolates the network such as airplane mode.
+    This technique can be used for GSM phones with SIMs that are powered off to examine the device properly.
+    </string>
+
+    <!-- TODO: STEP 7 POWER OFF -->
+    <string name="content1_step7_off">
+    Once battery is charged and processing of SIM and Micro-SD is finished, replace these items back into the device and begin extraction.
+    Forensic personnel must attempt to obtain both a physical and logical extraction if supported by the device.
+    </string>
+
+    <string name="content2_step7_off">
+    If device is GSM and does not have an internal faraday setting (airplane mode), consider forensic SIM or additional faraday steps.
+    </string>
+
+    <string name="content4_step7_off">
+    If situation is exigent (i.e. missing child, recent murder, etc.)
+    consult your supervisor for which items may be needed first such as call history details, messages, etc.
+    </string>
+
+    <!-- TODO: STEP 8 POWER OFF -->
+    <string name="content1_step8_off">
+    Anything that is extracted off the device MUST be validated through secondary means because evidence such as
+    text messages can be “spoofed” and many examiners fail to perform this step. Suggestions for validation:
+    </string>
+
+    <string name="content2_step8_off">
+    Use the GUI (Visual):\n
+    You connect your phone via USB cable to tool “A”. Tool “A” obtains 250 call history entries,
+    687 text messages, and 32 images. Using the phone’s Graphical User Interface (GUI), you visually validate these entries.
+    Visual validation is easy and only costs the examiner their time. \n
+    </string>
+
+    <string name="content3_step8_off">
+    Obtain a Call Detail Records (CDR):\n
+    If the phone utilized normal cell phone towers to communicate, obtain the CDR.
+    Many cases have argued specific dates and times off the phone as invalid only to be confirmed through the CDR results.
+    This can also help with confirming or denying the content of SMS. Although most carries do not retain the actual text content,
+    they will retain the deliver results - meaning “to” and “from” numbers with a code showing it was SMS.
+    CDR results are part of the forensic process and recommended when data is recovered that used towers to connect and terminate. \n
+    </string>
+
+    <string name="content4_step8_off">
+    Cross Validate:\n
+    If you have the ability to utilize two or more different tools to obtain the data, this can confirm each of the product results.
+    This in combination with visual validation can certainly ensure that the tools are getting what you can see.
+    Using product “A” to confirm product “B” cross validates both. \n
+    </string>
+
+    <string name="content5_step8_off">
+    Hand Carve:\n
+    Manually locating artifacts may or may not always be an option.
+    If you have the training, time, and tools, you can use this method to confirm what a tool or utility was able to acquire through the automated process.
+    If you have the ability to obtain the file system, you will often be able to use free utilities to manually locate times, date, and content.
+    By doing this, you will be able to articulate in court that you manually located the same artifact that tool “A” was able to pull.
+    Hand-carving is also used to locate artifacts missed by tools and explored in greater detail in level II and III.
+    </string>
+
+
+    <!-- TODO: STEP 9 POWER OFF -->
+    <string name="content1_step9_off">
+    This report will be presented in court and will include many of the items listed above.
+    With “live” devices, the report must clearly articulate what was done to preserve the evidence.
+    </string>
+
+    <string name="content2_step9_off">
+    The legal portion of the report process is the number one target that defense will go after because they will want to suppress it before it can be presented before the jury.
+    This is usually because defense doesn’t want incriminating texts, images, or videos that may implicate their clients.
+    Therefore, it is imperative to establish a sound reporting process that will accurately convey your findings.
+    </string>
+
+
+    <!-- TODO: Summary -->
+    <string name="summary">Summary Report</string>
+    <string name="content1_summary_on">Device status found on the scene: </string>
+    <string name="content2_summary_on">
+    <![CDATA[<b><font color=#ff0000>ON
+    </b>]]></string>
+    <string name="content3_summary_on">
+    <![CDATA[<b><font color=#ff0000>OFF
+    </b>]]></string>
+    <string name="content4_summary_on">
+    <![CDATA[<b><font color=#ff0000>YES
+    </b>]]></string>
+    <string name="content5_summary_on">
+    <![CDATA[<b><font color=#ff0000>NO
+    </b>]]></string>
+    <string name="content6_summary_on">Device Operating System: </string>
+    <string name="content7_summary_on">
+    <![CDATA[<b><font color=#ff0000>iPhone/iOS
+    </b>]]></string>
+    <string name="content8_summary_on">
+    <![CDATA[<b><font color=#ff0000>Android
+    </b>]]></string>
+</resources>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0758b4</color>
+    <color name="colorPrimaryDark">#f1a2a2</color>
+    <color name="colorAccent">#0e30ef</color>
+    <color name="textPrimary">#000000</color>
+    <color name="home">#34ca46</color>
+    <color name="step1_on">#34ca46</color>
+    <color name="step2_on">#34ca46</color>
+    <color name="step3_on">#34ca46</color>
+    <color name="step4_on">#34ca46</color>
+    <color name="step5_on">#34ca46</color>
+    <color name="step6_on">#34ca46</color>
+    <color name="step7_on">#34ca46</color>
+    <color name="step8_on">#34ca46</color>
+    <color name="step9_on">#34ca46</color>
+
+    <color name="step1_off">#34ca46</color>
+    <color name="step2_off">#34ca46</color>
+    <color name="step3_off">#34ca46</color>
+    <color name="step4_off">#34ca46</color>
+    <color name="step5_off">#34ca46</color>
+    <color name="step6_off">#34ca46</color>
+    <color name="step7_off">#34ca46</color>
+    <color name="step8_off">#34ca46</color>
+    <color name="step9_off">#34ca46</color>
+
+
+</resources>
