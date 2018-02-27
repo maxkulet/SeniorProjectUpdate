@@ -1,5 +1,6 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/step1_on_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="rocket.team.seniorproject.StepOneOnFragment">
@@ -34,13 +35,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center">
-        <ImageView
+        <ImageButton
+            android:id="@+id/image1"
             android:layout_width="150dp"
             android:layout_height="100dp"
             android:layout_gravity="left"
             android:src="@drawable/blood"
             />
-        <ImageView
+        <ImageButton
+            android:id="@+id/image2"
             android:layout_width="150dp"
             android:layout_height="100dp"
             android:src="@drawable/dna"
@@ -103,5 +106,16 @@
     </LinearLayout>
 
     </LinearLayout>
-
+    <ImageView
+        android:id="@+id/expanded_image1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:contentDescription="Phone DNA" />
+    <ImageView
+        android:id="@+id/expanded_image2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:contentDescription="Blood" />
 </FrameLayout>

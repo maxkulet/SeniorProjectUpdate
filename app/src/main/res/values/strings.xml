@@ -22,7 +22,6 @@
     <string name="summary_on">Summary Power On</string>
 
 
-
     <string name="power_off">POWER OFF</string>
     <string name="step1_off">Look for DNA on the Device</string>
     <string name="step2_off">Identify What You Have</string>
@@ -376,4 +375,7 @@ Combining methods is also encouraged to increase effectiveness.
     <string name="content8_summary_on">
     <![CDATA[<b><font color=#ff0000>Android
     </b>]]></string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

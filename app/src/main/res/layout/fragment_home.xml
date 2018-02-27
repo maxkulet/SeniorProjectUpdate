@@ -90,15 +90,17 @@
                     android:id="@+id/onButton"
                     android:layout_width="match_parent"
                     android:textSize="@dimen/stepSize"
-                    android:textColor="#e17e0d"
+                    android:textColor="@color/colorAccent"
                     android:layout_height="wrap_content"
+                    android:theme="@style/MyRadioButton"
                     android:text="@string/on"
                     />
                 <RadioButton
                     android:id="@+id/offButton"
-                    android:textColor="#e17e0d"
+                    android:textColor="@color/colorAccent"
                     android:layout_width="match_parent"
                     android:textSize="@dimen/stepSize"
+                    android:theme="@style/MyRadioButton"
                     android:layout_height="wrap_content"
                     android:text="@string/off"
                     />
@@ -113,7 +115,7 @@
                 android:layout_gravity="center"
                 android:background="@drawable/getstarted"
                 android:text="@string/start"
-                android:textColor="@color/colorAccent"
+                android:textColor="#ed0a0a"
                 android:layout_marginBottom="30dp"></Button>
 
 
