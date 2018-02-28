@@ -1,6 +1,7 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:id="@+id/step5_on_layout"
     android:layout_height="match_parent"
     tools:context="rocket.team.seniorproject.StepFiveOnFragment">
     <ScrollView
@@ -51,12 +52,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center">
-            <ImageView
+            <ImageButton
+                android:id="@+id/step5_on_imagebtn1"
                 android:layout_width="150dp"
                 android:layout_height="100dp"
                 android:layout_gravity="left"
                 android:src="@drawable/bag"/>
-            <ImageView
+            <ImageButton
+                android:id="@+id/step5_on_imagebtn2"
                 android:layout_width="150dp"
                 android:layout_height="100dp"
                 android:src="@drawable/mesh"/>
@@ -90,12 +93,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center">
-            <ImageView
+            <ImageButton
+                android:id="@+id/step5_on_imagebtn3"
                 android:layout_width="150dp"
                 android:layout_height="100dp"
                 android:layout_gravity="left"
                 android:src="@drawable/foil"/>
-            <ImageView
+            <ImageButton
+                android:id="@+id/step5_on_imagebtn4"
                 android:layout_width="150dp"
                 android:layout_height="100dp"
                 android:src="@drawable/can"/>
@@ -175,5 +180,31 @@
             android:layout_width="match_parent"
             android:layout_height="60dp" />
     </LinearLayout>
+
+
     </ScrollView>
+    <ImageView
+        android:id="@+id/step5_on_expanded1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:contentDescription="bag" />
+    <ImageView
+        android:id="@+id/step5_on_expanded2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:contentDescription="mesh" />
+    <ImageView
+        android:id="@+id/step5_on_expanded3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:contentDescription="foil" />
+    <ImageView
+        android:id="@+id/step5_on_expanded4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:contentDescription="can" />
 </FrameLayout>

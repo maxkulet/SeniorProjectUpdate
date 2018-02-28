@@ -149,13 +149,6 @@ public class StepOneOnFragment extends Fragment {
         // Retrieve and cache the system's default "short" animation time.
         mShortAnimationDuration = getResources().getInteger(
                 android.R.integer.config_shortAnimTime);
-
-
-
-
-
-
-
         return view;
     }
 

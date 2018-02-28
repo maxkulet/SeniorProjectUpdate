@@ -319,12 +319,11 @@
                 android:text="Next"
                 android:textColor="@color/colorPrimary"
                 android:textSize="@dimen/textSize"
+                android:layout_marginBottom="60dp"
                 android:textStyle="italic" />
 
         </LinearLayout>
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="60dp" />
+
     </LinearLayout>
     </ScrollView>
 

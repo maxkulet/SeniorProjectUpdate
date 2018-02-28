@@ -36,7 +36,7 @@ public class StepThreeOffFragment extends Fragment {
                 StepFourOffFragment stepFourOff = new StepFourOffFragment();
                 android.support.v4.app.FragmentManager fragmentManager = getFragmentManager();
                 android.support.v4.app.FragmentTransaction fragmentTransaction =  fragmentManager.beginTransaction();
-                fragmentTransaction.replace(R.id.flContent, stepFourOff);
+                fragmentTransaction.replace(R.id.flContent, stepFourOff, "stepFourOff");
                 fragmentTransaction.addToBackStack(null);
                 fragmentTransaction.commit();
             }
