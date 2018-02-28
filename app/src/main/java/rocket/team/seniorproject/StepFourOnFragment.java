@@ -97,7 +97,7 @@ public class StepFourOnFragment extends Fragment  {
                     iconOS.setImageResource(R.drawable.iphone);
                     titleOS.setText("iPhone");
                     iconOS.setVisibility(View.VISIBLE);
-                    img1.setImageResource(R.drawable.check);
+                    img2.setImageResource(R.drawable.check);
                     img3.setImageResource(R.drawable.check);
                     txt1.setText(R.string.content1_step4_on);
                     txt2.setText(R.string.content2_step4_on);
@@ -108,7 +108,7 @@ public class StepFourOnFragment extends Fragment  {
                     iconOS.setImageResource(R.drawable.android);
                     iconOS.setVisibility(View.VISIBLE);
                     titleOS.setText("Android OS");
-                    img1.setImageResource(R.drawable.check);
+                    img2.setImageResource(R.drawable.check);
                     img3.setImageResource(R.drawable.star);
                     visible();
                     txt1.setText(R.string.content4_step4_on);
@@ -124,12 +124,12 @@ public class StepFourOnFragment extends Fragment  {
                 else  {
                     titleOS.setText("");
                     iconOS.setVisibility(View.GONE);
-                    img1.setImageResource(R.drawable.help);
-                    img1.setVisibility(View.VISIBLE);
-                    img2.setVisibility(View.GONE);
+                    img2.setImageResource(R.drawable.help);
+                    img2.setVisibility(View.VISIBLE);
+                    img1.setVisibility(View.GONE);
                     img3.setVisibility(View.GONE);
-                    txt1.setText(Html.fromHtml(getString(R.string.content8_step4_on)));
-                    txt2.setText("");
+                    txt2.setText(Html.fromHtml(getString(R.string.content8_step4_on)));
+                    txt1.setText("");
                     txt3.setText("");
                 }
 

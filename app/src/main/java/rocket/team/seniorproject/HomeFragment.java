@@ -33,7 +33,7 @@ public class HomeFragment extends Fragment {
     Button startButton;
     RadioGroup group_button;
     RadioButton onButton, offButton;
-    TextView display;
+   // TextView display;
 
 
    // Context context = this;
@@ -49,7 +49,7 @@ public class HomeFragment extends Fragment {
         startButton = (Button) view.findViewById(R.id.startButton);
         onButton = (RadioButton) view.findViewById(R.id.onButton);
         offButton = (RadioButton) view.findViewById(R.id.offButton);
-        display = (TextView) view.findViewById(R.id.display);
+       // display = (TextView) view.findViewById(R.id.display);
         group_button = (RadioGroup) view.findViewById(R.id.group_button);
         startButton.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -116,18 +116,8 @@
                 android:background="@drawable/getstarted"
                 android:text="@string/start"
                 android:textColor="#ed0a0a"
-                android:layout_marginBottom="30dp"></Button>
+                android:layout_marginBottom="80dp"></Button>
 
-
-            <TextView
-                android:id="@+id/display"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:textAlignment="center"
-                android:textColor="#000000"
-                android:textSize="18sp"
-                android:textStyle="bold" />
         </LinearLayout>
 
     </ScrollView>

@@ -2,12 +2,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/step3_on"
+    android:id="@+id/step3_on_layout"
     tools:context="rocket.team.seniorproject.StepThreeOnFragment">
-
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
     <!-- TODO: Update blank fragment layout -->
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
@@ -59,7 +60,33 @@
                 android:textStyle="italic" />
 
         </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+            <ImageButton
+                android:id="@+id/step3_on_imagebtn1"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:maxWidth="150dp"
+                android:maxHeight="100dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/iphone_model"/>
 
+            <ImageButton
+                android:id="@+id/step3_on_imagebtn2"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:maxWidth="150dp"
+                android:maxHeight="100dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/android_model"/>
+        </LinearLayout>
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
@@ -128,14 +155,19 @@
                 android:textStyle="italic" />
 
         </LinearLayout>
-
-
-
-
-
-
-
-
-
     </LinearLayout>
+
+    </ScrollView>
+    <ImageView
+        android:id="@+id/step3_on_expanded1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:contentDescription="Battery Pull" />
+    <ImageView
+        android:id="@+id/step3_on_expanded2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:contentDescription="Power Button" />
 </FrameLayout>

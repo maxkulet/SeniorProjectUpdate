@@ -221,6 +221,7 @@
                         android:layout_width="40dp"
                         android:layout_height="30dp"
                         android:layout_gravity="center"
+                        android:layout_marginTop="30dp"
                         android:background="@drawable/next"
                         android:text="@string/start"
                         android:textColor="@color/colorPrimary"></ImageButton>
