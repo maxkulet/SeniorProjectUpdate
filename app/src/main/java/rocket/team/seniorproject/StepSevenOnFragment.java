@@ -43,10 +43,10 @@ public class StepSevenOnFragment extends Fragment {
                         .setCancelable(false)
                         .setPositiveButton("GOT IT",new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog,int id) {
-                                StepEightOnFragment stepEgihtOn = new StepEightOnFragment();
+                                StepEightOnFragment stepEightOn = new StepEightOnFragment();
                                 android.support.v4.app.FragmentManager fragmentManager = getFragmentManager();
                                 android.support.v4.app.FragmentTransaction fragmentTransaction =  fragmentManager.beginTransaction();
-                                fragmentTransaction.replace(R.id.flContent, stepEgihtOn);
+                                fragmentTransaction.replace(R.id.flContent, stepEightOn, "stepEightOn");
                                 fragmentTransaction.addToBackStack(null);
                                 fragmentTransaction.commit();
                             }

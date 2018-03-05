@@ -37,6 +37,7 @@ public class MainActivity extends AppCompatActivity
     public static String myDeviceDNA = "";
     public static String myDeviceSecurity = "";
     public static String myDeviceOS = "";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -94,7 +95,7 @@ public class MainActivity extends AppCompatActivity
             if (currentFragment instanceof HomeFragment) {
                 finish();
             }
-        } else {
+        } else{
                 super.onBackPressed();
             }
     }

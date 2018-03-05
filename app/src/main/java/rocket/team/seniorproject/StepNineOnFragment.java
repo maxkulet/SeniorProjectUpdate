@@ -40,10 +40,10 @@ public class StepNineOnFragment extends Fragment {
         nextStep9On.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                SummaryOnFragment sum = new SummaryOnFragment();
+                SummaryOnFragment sumOn = new SummaryOnFragment();
                 android.support.v4.app.FragmentManager fragmentManager = getFragmentManager();
                 android.support.v4.app.FragmentTransaction fragmentTransaction =  fragmentManager.beginTransaction();
-                fragmentTransaction.replace(R.id.flContent, sum);
+                fragmentTransaction.replace(R.id.flContent, sumOn, "sumOn");
                 fragmentTransaction.addToBackStack(null);
                 fragmentTransaction.commit();
 

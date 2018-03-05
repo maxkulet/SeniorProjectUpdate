@@ -90,7 +90,34 @@
                         android:textColor="#000000"
                         android:textSize="@dimen/subSize" />
                 </LinearLayout>
-
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal">
+                    <ImageButton
+                        android:id="@+id/step2_on_imagebtn6"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:maxWidth="150dp"
+                        android:maxHeight="100dp"
+                        android:scaleType="fitCenter"
+                        android:visibility="invisible"
+                        android:src="@drawable/airplan_iphone"/>
+                    <ImageButton
+                        android:id="@+id/step2_on_imagebtn7"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:maxWidth="150dp"
+                        android:maxHeight="100dp"
+                        android:scaleType="fitCenter"
+                        android:visibility="invisible"
+                        android:src="@drawable/airplane_android"/>
+                </LinearLayout>
 
 
                 <LinearLayout
@@ -123,7 +150,7 @@
                     android:maxHeight="100dp"
                     android:scaleType="fitCenter"
                     android:visibility="invisible"
-                    android:src="@drawable/live_step2"/>
+                    android:src="@drawable/android_sim"/>
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content">
@@ -145,7 +172,11 @@
                         android:textSize="@dimen/subSize" />
                 </LinearLayout>
 
-
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal">
                 <ImageButton
                     android:id="@+id/step2_on_imagebtn2"
                     android:layout_gravity="center"
@@ -156,7 +187,19 @@
                     android:maxHeight="100dp"
                     android:scaleType="fitCenter"
                     android:visibility="invisible"
-                    android:src="@drawable/screen_lock"/>
+                    android:src="@drawable/live_on_off_step2android"/>
+                <ImageButton
+                    android:id="@+id/step2_on_imagebtn5"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:maxWidth="150dp"
+                    android:maxHeight="100dp"
+                    android:scaleType="fitCenter"
+                    android:visibility="invisible"
+                    android:src="@drawable/live_on_off_step2"/>
+                </LinearLayout>
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content">
@@ -193,7 +236,7 @@
                     android:maxHeight="100dp"
                     android:scaleType="fitCenter"
                     android:visibility="invisible"
-                    android:src="@drawable/iphone_pull_sim"/>
+                    android:src="@drawable/apple_sim"/>
 
                 <ImageButton
                     android:id="@+id/step2_on_imagebtn4"
@@ -205,7 +248,7 @@
                     android:maxHeight="100dp"
                     android:scaleType="fitCenter"
                     android:visibility="invisible"
-                    android:src="@drawable/android_pull_sim"/>
+                    android:src="@drawable/android_sim"/>
                 </LinearLayout>
 
 
@@ -260,6 +303,24 @@
         android:contentDescription="Iphone sim Pull" />
     <ImageView
         android:id="@+id/step2_on_expanded4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:contentDescription="Android sim pull" />
+    <ImageView
+        android:id="@+id/step2_on_expanded5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:contentDescription="Android sim pull" />
+    <ImageView
+        android:id="@+id/step2_on_expanded6"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:contentDescription="Android sim pull" />
+    <ImageView
+        android:id="@+id/step2_on_expanded7"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:visibility="invisible"

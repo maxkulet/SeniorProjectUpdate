@@ -40,16 +40,18 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center">
-                <ImageView
+                <ImageButton
+                    android:id="@+id/off_image1"
                     android:layout_width="150dp"
                     android:layout_height="100dp"
+                    android:layout_gravity="left"
                     android:src="@drawable/blood"
                     />
-                <ImageView
+                <ImageButton
+                    android:id="@+id/off_image2"
                     android:layout_width="150dp"
                     android:layout_height="100dp"
                     android:src="@drawable/dna"
-
                     />
 
 
@@ -115,4 +117,16 @@
 
         </LinearLayout>
     </ScrollView>
+    <ImageView
+        android:id="@+id/off_expanded_image1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:contentDescription="Phone DNA" />
+    <ImageView
+        android:id="@+id/off_expanded_image2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:contentDescription="Blood" />
 </FrameLayout>

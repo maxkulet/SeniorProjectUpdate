@@ -19,7 +19,6 @@ import android.view.animation.DecelerateInterpolator;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.RadioButton;
-import android.widget.RadioGroup;
 import android.widget.TextView;
 
 
@@ -30,7 +29,7 @@ public class StepTwoOnFragment extends Fragment {
     private int mShortAnimationDuration;
     private Animator mCurrentAnimator;
     ImageButton step2NextOn, step2_on_imagebtn1, step2_on_imagebtn2, step2_on_imagebtn3,
-                 step2_on_imagebtn4;
+                 step2_on_imagebtn4, step2_on_imagebtn5, step2_on_imagebtn6, step2_on_imagebtn7;
     ImageView step2_on_img1, step2_on_img2, step2_on_img3, step2_on_img4;
     RadioButton step2_yes_radio,step2_no_radio;
     TextView step2_on_txt1, step2_on_txt2, step2_on_txt3, step2_on_txt4, step2_on_txt5;
@@ -50,6 +49,10 @@ public class StepTwoOnFragment extends Fragment {
         step2_on_imagebtn2 = (ImageButton) view.findViewById(R.id.step2_on_imagebtn2);
         step2_on_imagebtn3 = (ImageButton) view.findViewById(R.id.step2_on_imagebtn3);
         step2_on_imagebtn4 = (ImageButton) view.findViewById(R.id.step2_on_imagebtn4);
+        step2_on_imagebtn5 = (ImageButton) view.findViewById(R.id.step2_on_imagebtn5);
+        step2_on_imagebtn6 = (ImageButton) view.findViewById(R.id.step2_on_imagebtn6);
+        step2_on_imagebtn7 = (ImageButton) view.findViewById(R.id.step2_on_imagebtn7);
+
 
         step2_yes_radio = (RadioButton) view.findViewById(R.id.step2_yes_radio);
         step2_no_radio = (RadioButton) view.findViewById(R.id.step2_no_radio);
@@ -62,6 +65,8 @@ public class StepTwoOnFragment extends Fragment {
         step2_on_img2 = (ImageView) view.findViewById(R.id.step2_on_img2);
         step2_on_img3 = (ImageView) view.findViewById(R.id.step2_on_img3);
         step2_on_img4 = (ImageView) view.findViewById(R.id.step2_on_img4);
+
+
 
         step2_yes_radio.setOnClickListener(new View.OnClickListener()
         {
@@ -77,6 +82,9 @@ public class StepTwoOnFragment extends Fragment {
                 step2_on_imagebtn2.setVisibility(View.VISIBLE);
                 step2_on_imagebtn3.setVisibility(View.VISIBLE);
                 step2_on_imagebtn4.setVisibility(View.VISIBLE);
+                step2_on_imagebtn5.setVisibility(View.VISIBLE);
+                step2_on_imagebtn6.setVisibility(View.VISIBLE);
+                step2_on_imagebtn7.setVisibility(View.VISIBLE);
                 step2_on_img1.setVisibility(View.VISIBLE);
                 step2_on_img2.setVisibility(View.VISIBLE);
                 step2_on_img3.setVisibility(View.VISIBLE);
@@ -88,12 +96,14 @@ public class StepTwoOnFragment extends Fragment {
         {
             @Override
             public void onClick(View v) {
-
                 MainActivity.myDeviceSecurity = getString(R.string.content5_summary_on);
                 step2_on_imagebtn1.setVisibility(View.INVISIBLE);
                 step2_on_imagebtn2.setVisibility(View.INVISIBLE);
                 step2_on_imagebtn3.setVisibility(View.INVISIBLE);
                 step2_on_imagebtn4.setVisibility(View.INVISIBLE);
+                step2_on_imagebtn5.setVisibility(View.INVISIBLE);
+                step2_on_imagebtn6.setVisibility(View.INVISIBLE);
+                step2_on_imagebtn7.setVisibility(View.INVISIBLE);
                 step2_on_img1.setVisibility(View.INVISIBLE);
                 step2_on_img2.setVisibility(View.INVISIBLE);
                 step2_on_img3.setVisibility(View.INVISIBLE);
@@ -134,7 +144,7 @@ public class StepTwoOnFragment extends Fragment {
                                         StepThreeOnFragment stepThreeOn = new StepThreeOnFragment();
                                         android.support.v4.app.FragmentManager fragmentManager = getFragmentManager();
                                         android.support.v4.app.FragmentTransaction fragmentTransaction =  fragmentManager.beginTransaction();
-                                        fragmentTransaction.replace(R.id.flContent, stepThreeOn);
+                                        fragmentTransaction.replace(R.id.flContent, stepThreeOn, "stepThreeOn");
                                         fragmentTransaction.addToBackStack(null);
                                         fragmentTransaction.commit();
                                     }
@@ -147,11 +157,10 @@ public class StepTwoOnFragment extends Fragment {
 
                     } else if (step2_no_radio.isChecked()) {
 
-
                         StepThreeOnFragment stepThreeOn = new StepThreeOnFragment();
                         android.support.v4.app.FragmentManager fragmentManager = getFragmentManager();
                         android.support.v4.app.FragmentTransaction fragmentTransaction =  fragmentManager.beginTransaction();
-                        fragmentTransaction.replace(R.id.flContent, stepThreeOn);
+                        fragmentTransaction.replace(R.id.flContent, stepThreeOn, "stepThreeOn");
                         fragmentTransaction.addToBackStack(null);
                         fragmentTransaction.commit();
 
@@ -190,28 +199,49 @@ public class StepTwoOnFragment extends Fragment {
         final View thumb2View = view.findViewById(R.id.step2_on_imagebtn2);
         final View thumb3View = view.findViewById(R.id.step2_on_imagebtn3);
         final View thumb4View = view.findViewById(R.id.step2_on_imagebtn4);
+        final View thumb5View = view.findViewById(R.id.step2_on_imagebtn5);
+        final View thumb6View = view.findViewById(R.id.step2_on_imagebtn6);
+        final View thumb7View = view.findViewById(R.id.step2_on_imagebtn7);
         thumb1View.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                zoomImageFromThumb(thumb1View, R.drawable.live_step2,  R.id.step2_on_expanded1, R.id.step2_on_layout);
+                zoomImageFromThumb(thumb1View, R.drawable.android_sim,  R.id.step2_on_expanded1, R.id.step2_on_layout);
             }
         });
         thumb2View.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                zoomImageFromThumb(thumb2View, R.drawable.screen_lock,  R.id.step2_on_expanded2, R.id.step2_on_layout);
+                zoomImageFromThumb(thumb2View, R.drawable.live_on_off_step2android,  R.id.step2_on_expanded2, R.id.step2_on_layout);
+            }
+        });
+        thumb5View.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                zoomImageFromThumb(thumb5View, R.drawable.live_on_off_step2,  R.id.step2_on_expanded5, R.id.step2_on_layout);
             }
         });
         thumb3View.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                zoomImageFromThumb(thumb3View, R.drawable.iphone_pull_sim, R.id.step2_on_expanded3, R.id.step2_on_layout);
+                zoomImageFromThumb(thumb3View, R.drawable.apple_sim, R.id.step2_on_expanded3, R.id.step2_on_layout);
             }
         });
         thumb4View.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                zoomImageFromThumb(thumb4View, R.drawable.android_pull_sim,  R.id.step2_on_expanded4, R.id.step2_on_layout);
+                zoomImageFromThumb(thumb4View, R.drawable.android_sim,  R.id.step2_on_expanded4, R.id.step2_on_layout);
+            }
+        });
+        thumb6View.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                zoomImageFromThumb(thumb6View, R.drawable.airplan_iphone,  R.id.step2_on_expanded6, R.id.step2_on_layout);
+            }
+        });
+        thumb7View.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                zoomImageFromThumb(thumb7View, R.drawable.airplane_android,  R.id.step2_on_expanded7, R.id.step2_on_layout);
             }
         });
         // Retrieve and cache the system's default "short" animation time.
@@ -224,11 +254,6 @@ public class StepTwoOnFragment extends Fragment {
 
         return view;
     }
-
-
-
-
-
 
     private void zoomImageFromThumb(final View thumbView, int imageResId, int layout, int imageTarget ) {
         // If there's an animation in progress, cancel it

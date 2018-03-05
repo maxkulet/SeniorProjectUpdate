@@ -19,7 +19,7 @@
     <string name="step7_on">Perform Extraction</string>
     <string name="step8_on">Validate Findings</string>
     <string name="step9_on">Report</string>
-    <string name="summary_on">Summary Power On</string>
+    <string name="summary_on">Process Summary</string>
 
 
     <string name="power_off">POWER OFF</string>
@@ -262,8 +262,9 @@ Combining methods is also encouraged to increase effectiveness.
     </string>
 
     <string name="content5_step5_off">
-    Devices such as Apple and Blackberry can turn on once they reach enough of a charge to trigger the boot process,
+         <![CDATA[<i><font color=#ff0000>Devices such as Apple and Blackberry can turn on once they reach enough of a charge to trigger the boot process,
     which can cause them to touch the network and other wireless exchanges (Wi-Fi, Bluetooth).
+    </i>]]>
     </string>
 
 
@@ -282,8 +283,9 @@ Combining methods is also encouraged to increase effectiveness.
     </string>
 
     <string name="content4_step6_off">
-    Many pay-as-you-go- devices do not have an internal feature that isolates the network such as airplane mode.
+         <![CDATA[<i><font color=#ff0000>  Many pay-as-you-go- devices do not have an internal feature that isolates the network such as airplane mode.
     This technique can be used for GSM phones with SIMs that are powered off to examine the device properly.
+    </i>]]>
     </string>
 
     <!-- TODO: STEP 7 POWER OFF -->
@@ -297,8 +299,10 @@ Combining methods is also encouraged to increase effectiveness.
     </string>
 
     <string name="content4_step7_off">
-    If situation is exigent (i.e. missing child, recent murder, etc.)
+        <![CDATA[<i><font color=#ff0000>If situation is exigent (i.e. missing child, recent murder, etc.)
     consult your supervisor for which items may be needed first such as call history details, messages, etc.
+    </i>]]>
+
     </string>
 
     <!-- TODO: STEP 8 POWER OFF -->
@@ -307,43 +311,11 @@ Combining methods is also encouraged to increase effectiveness.
     text messages can be “spoofed” and many examiners fail to perform this step. Suggestions for validation:
     </string>
 
-    <string name="content2_step8_off">
-    Use the GUI (Visual):\n
-    You connect your phone via USB cable to tool “A”. Tool “A” obtains 250 call history entries,
-    687 text messages, and 32 images. Using the phone’s Graphical User Interface (GUI), you visually validate these entries.
-    Visual validation is easy and only costs the examiner their time. \n
-    </string>
-
-    <string name="content3_step8_off">
-    Obtain a Call Detail Records (CDR):\n
-    If the phone utilized normal cell phone towers to communicate, obtain the CDR.
-    Many cases have argued specific dates and times off the phone as invalid only to be confirmed through the CDR results.
-    This can also help with confirming or denying the content of SMS. Although most carries do not retain the actual text content,
-    they will retain the deliver results - meaning “to” and “from” numbers with a code showing it was SMS.
-    CDR results are part of the forensic process and recommended when data is recovered that used towers to connect and terminate. \n
-    </string>
-
-    <string name="content4_step8_off">
-    Cross Validate:\n
-    If you have the ability to utilize two or more different tools to obtain the data, this can confirm each of the product results.
-    This in combination with visual validation can certainly ensure that the tools are getting what you can see.
-    Using product “A” to confirm product “B” cross validates both. \n
-    </string>
-
-    <string name="content5_step8_off">
-    Hand Carve:\n
-    Manually locating artifacts may or may not always be an option.
-    If you have the training, time, and tools, you can use this method to confirm what a tool or utility was able to acquire through the automated process.
-    If you have the ability to obtain the file system, you will often be able to use free utilities to manually locate times, date, and content.
-    By doing this, you will be able to articulate in court that you manually located the same artifact that tool “A” was able to pull.
-    Hand-carving is also used to locate artifacts missed by tools and explored in greater detail in level II and III.
-    </string>
 
 
     <!-- TODO: STEP 9 POWER OFF -->
     <string name="content1_step9_off">
     This report will be presented in court and will include many of the items listed above.
-    With “live” devices, the report must clearly articulate what was done to preserve the evidence.
     </string>
 
     <string name="content2_step9_off">
@@ -375,7 +347,16 @@ Combining methods is also encouraged to increase effectiveness.
     <string name="content8_summary_on">
     <![CDATA[<b><font color=#ff0000>Android
     </b>]]></string>
-
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="content9_summary_on">
+    <![CDATA[<b><font color=#ff0000>UNIDENTIFIED
+    </b>]]></string>
+    <string name="content10_summary_on">
+    Congratulation! Triaging Process is done. Now you are ready to turn in what you have to the investigator.
+        You can navigate to any steps on the left panel or go back to HOME to start a new phone.
+   </string>
+    <string name="content11_summary_on">
+    THANK YOU
+   </string>
+    <!-- ABOUT -->
+    <string name="content1_about">Developed by </string>
 </resources>

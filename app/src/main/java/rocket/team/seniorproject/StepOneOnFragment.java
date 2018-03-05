@@ -81,7 +81,7 @@ public class StepOneOnFragment extends Fragment {
 
                                     android.support.v4.app.FragmentManager fragmentManager = getFragmentManager();
                                     android.support.v4.app.FragmentTransaction fragmentTransaction =  fragmentManager.beginTransaction();
-                                    fragmentTransaction.replace(R.id.flContent, stepTwoOn);
+                                    fragmentTransaction.replace(R.id.flContent, stepTwoOn, "stepTwoOn");
                                     fragmentTransaction.addToBackStack(null);
                                     fragmentTransaction.commit();
                                 }

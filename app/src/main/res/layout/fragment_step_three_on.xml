@@ -74,7 +74,7 @@
                 android:maxWidth="150dp"
                 android:maxHeight="100dp"
                 android:scaleType="fitCenter"
-                android:src="@drawable/iphone_model"/>
+                android:src="@drawable/anroid_model"/>
 
             <ImageButton
                 android:id="@+id/step3_on_imagebtn2"
@@ -85,7 +85,7 @@
                 android:maxWidth="150dp"
                 android:maxHeight="100dp"
                 android:scaleType="fitCenter"
-                android:src="@drawable/android_model"/>
+                android:src="@drawable/iphone_model"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="wrap_content"

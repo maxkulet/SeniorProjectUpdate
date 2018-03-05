@@ -6,7 +6,9 @@
     android:layout_height="match_parent"
     tools:context="rocket.team.seniorproject.StepTwoOffFragment">
 
-    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
 
     <LinearLayout
         android:layout_width="fill_parent"
@@ -60,6 +62,33 @@
                 android:textSize="@dimen/subSize"
                 android:textStyle="italic" />
 
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+            <ImageButton
+                android:id="@+id/step2_off_imagebtn1"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:maxWidth="150dp"
+                android:maxHeight="100dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/anroid_model"/>
+
+            <ImageButton
+                android:id="@+id/step2_off_imagebtn2"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:maxWidth="150dp"
+                android:maxHeight="100dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/iphone_model"/>
         </LinearLayout>
 
         <LinearLayout
@@ -135,4 +164,17 @@
 
 
     </LinearLayout>
+    </ScrollView>
+    <ImageView
+        android:id="@+id/step2_off_expanded1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:contentDescription="Battery Pull" />
+    <ImageView
+        android:id="@+id/step2_off_expanded2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:contentDescription="Power Button" />
 </FrameLayout>

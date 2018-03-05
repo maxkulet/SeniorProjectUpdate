@@ -60,28 +60,16 @@ public class StepThreeOnFragment extends Fragment {
         thumb1View.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                zoomImageFromThumb(thumb1View, R.drawable.iphone_model,  R.id.step3_on_expanded1, R.id.step3_on_layout);
+                zoomImageFromThumb(thumb1View, R.drawable.anroid_model,  R.id.step3_on_expanded1, R.id.step3_on_layout);
             }
         });
         thumb2View.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                zoomImageFromThumb(thumb2View, R.drawable.android_model,  R.id.step3_on_expanded2, R.id.step3_on_layout);
+                zoomImageFromThumb(thumb2View, R.drawable.iphone_model,  R.id.step3_on_expanded2, R.id.step3_on_layout);
             }
         });
-    /*    thumb3View.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                zoomImageFromThumb(thumb3View, R.drawable.foil, R.id.step5_on_expanded3, R.id.step5_on_layout);
-            }
-        });
-        thumb4View.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                zoomImageFromThumb(thumb3View, R.drawable.can,  R.id.step5_on_expanded1, R.id.step5_on_layout);
-            }
-        });*/
-        // Retrieve and cache the system's default "short" animation time.
+
         mShortAnimationDuration = getResources().getInteger(
                 android.R.integer.config_shortAnimTime);
         return view;

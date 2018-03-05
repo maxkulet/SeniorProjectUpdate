@@ -76,7 +76,7 @@
                 android:title="@string/step5_off" />
             <item
                 android:id="@+id/step6_off"
-                android:icon="@drawable/sim"
+                android:icon="@drawable/android_sim"
                 android:title="@string/step6_off" />
             <item
                 android:id="@+id/step7_off"

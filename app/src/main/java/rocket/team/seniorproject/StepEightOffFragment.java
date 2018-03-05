@@ -10,6 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
+import android.widget.TextView;
 
 
 /**
@@ -18,6 +19,7 @@ import android.widget.ImageButton;
 public class StepEightOffFragment extends Fragment {
 
     ImageButton nextStep8Off;
+    TextView text_step8_off;
     public StepEightOffFragment() {
         // Required empty public constructor
     }
@@ -30,36 +32,23 @@ public class StepEightOffFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_step_eight_off, container, false);
 
         nextStep8Off = (ImageButton) view.findViewById(R.id.nextStep8Off);
+
+        text_step8_off = (TextView) view.findViewById(R.id.text_step8_off);
+        text_step8_off.setText(Html.fromHtml(  getString(R.string.content1_step8_on) + " " +
+                getString(R.string.content7_step8_on) +  getString(R.string.content2_step8_on)));
         nextStep8Off.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v)
 
             {
-                AlertDialog.Builder alert= new AlertDialog.Builder(
-                        getActivity ());
-                // set title
-                alert.setTitle(Html.fromHtml(getString(R.string.warn_message)));
-                // set dialog message
-                alert
-                        .setIcon(R.drawable.warning)
-                        .setMessage(Html.fromHtml(getString(R.string.content2_step9_off)))
-                        .setCancelable(false)
-                        .setPositiveButton("GOT IT",new DialogInterface.OnClickListener() {
-                            public void onClick(DialogInterface dialog,int id) {
+
                                 StepNineOffFragment stepNineOff = new StepNineOffFragment();
                                 android.support.v4.app.FragmentManager fragmentManager = getFragmentManager();
                                 android.support.v4.app.FragmentTransaction fragmentTransaction =  fragmentManager.beginTransaction();
                                 fragmentTransaction.replace(R.id.flContent, stepNineOff, "StepNineOff");
                                 fragmentTransaction.addToBackStack(null);
                                 fragmentTransaction.commit();
-                            }
-                        });
 
-                // create alert dialog
-                AlertDialog alertDialog = alert.create();
-
-                // show it
-                alertDialog.show();
 
 
             }

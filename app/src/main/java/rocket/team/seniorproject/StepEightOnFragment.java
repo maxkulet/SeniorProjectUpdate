@@ -39,7 +39,7 @@ public class StepEightOnFragment extends Fragment {
                 StepNineOnFragment stepNineOn = new StepNineOnFragment();
                 android.support.v4.app.FragmentManager fragmentManager = getFragmentManager();
                 android.support.v4.app.FragmentTransaction fragmentTransaction =  fragmentManager.beginTransaction();
-                fragmentTransaction.replace(R.id.flContent, stepNineOn);
+                fragmentTransaction.replace(R.id.flContent, stepNineOn, "stepNineOn");
                 fragmentTransaction.addToBackStack(null);
                 fragmentTransaction.commit();
             }

@@ -36,8 +36,15 @@
             android:text="@string/content1_step4_off"
             android:textColor="#000000"
             android:textSize="@dimen/textSize" />
-
-
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+        <ImageButton
+            android:id="@+id/step4_off_imagebtn1"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/sd_card"/>
         <Space
             android:layout_width="match_parent"
             android:layout_height="20dp" />
@@ -70,4 +77,10 @@
 
 
     </LinearLayout>
+    <ImageView
+        android:id="@+id/step4_off_expanded1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:contentDescription="can" />
 </FrameLayout>
