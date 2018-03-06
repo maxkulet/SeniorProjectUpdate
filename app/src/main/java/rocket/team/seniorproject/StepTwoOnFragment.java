@@ -56,6 +56,8 @@ public class StepTwoOnFragment extends Fragment {
 
         step2_yes_radio = (RadioButton) view.findViewById(R.id.step2_yes_radio);
         step2_no_radio = (RadioButton) view.findViewById(R.id.step2_no_radio);
+        step2_yes_radio.setChecked(false);
+        step2_no_radio.setChecked(false);
         step2_on_txt1 = (TextView) view.findViewById(R.id.step2_on_txt1);
         step2_on_txt2 = (TextView) view.findViewById(R.id.step2_on_txt2);
         step2_on_txt3 = (TextView) view.findViewById(R.id.step2_on_txt3);

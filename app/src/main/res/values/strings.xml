@@ -357,6 +357,21 @@ Combining methods is also encouraged to increase effectiveness.
     <string name="content11_summary_on">
     THANK YOU
    </string>
-    <!-- ABOUT -->
-    <string name="content1_about">Developed by </string>
+    <!-- TODO: About -->
+    <string name="About">
+    This Mobile App is developed by Team Rocket from University of Washington Tacoma.
+    </string>
+
+    <string name="About_content1">Detective John Bair \n Examiner - Tacoma Police Department \n
+        Lecture - University of Washington Tacoma \n
+        Author - Seeking the Truth From Mobile Forensics
+
+    </string>
+
+    <string name="About_content2">Rohella Muñoz - Team Leader</string>
+    <string name="About_content3">Ela Ilumin - Assistant Team Leader</string>
+    <string name="About_content4">Thuan Vo - App Developer</string>
+    <string name="About_content5">Daniel Valenzuela - App Developer</string>
+
+
 </resources>

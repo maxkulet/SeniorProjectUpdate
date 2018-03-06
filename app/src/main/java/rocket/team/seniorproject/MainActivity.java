@@ -29,7 +29,6 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
-
     private Fragment fragment = null;
     private BottomNavigationView mBottomNav;
     public static ArrayList<String> arrList = new ArrayList<String>();
@@ -47,7 +46,7 @@ public class MainActivity extends AppCompatActivity
         FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
         fragment = new HomeFragment();
         ft.replace(R.id.flContent, fragment);
-       ft.commit();
+        ft.commit();
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -88,16 +87,11 @@ public class MainActivity extends AppCompatActivity
         int selectMenu = 0;
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
+        } else {
+            super.onBackPressed();
+        }
 
-        } else if ((selectMenu != homeItem.getItemId())) {
-            homeItem.setChecked(homeItem.getItemId()== 0);
-            selectFragment(homeItem);
-            if (currentFragment instanceof HomeFragment) {
-                finish();
-            }
-        } else{
-                super.onBackPressed();
-            }
+
     }
 
     @Override
@@ -127,7 +121,7 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
-       // resetAllMenuItemsTextColor(navigationView);
+        // resetAllMenuItemsTextColor(navigationView);
 
 
         selectFragment(item);
@@ -138,22 +132,26 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         BottomNavigationView mBottomNav = (BottomNavigationView) findViewById(R.id.navigation);
-        FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+        FragmentManager fm = getSupportFragmentManager();
+
         //resetAllMenuItemsTextColor(navigationView);
-       // setTextColorForMenuItem(item, R.color.textPrimary);
+        // setTextColorForMenuItem(item, R.color.textPrimary);
 
         if (id == R.id.home) {
             fragment = new HomeFragment();
 
             // navigationView.setItemBackgroundResource(R.drawable.getstarted);.
-        } else if (id == R.id.step1_on) {
+        }  else if (id == R.id.about) {
+            fragment = new AboutFragment();
+        }
+        else if (id == R.id.step1_on) {
             fragment = new StepOneOnFragment();
             //setTextColorForMenuItem(item, R.color.home);
-           // resetAllMenuItemsTextColor(navigationView);
+            // resetAllMenuItemsTextColor(navigationView);
 
         }  else if (id == R.id.step2_on) {
             fragment = new StepTwoOnFragment();
-          //  resetAllMenuItemsTextColor(navigationView);
+            //  resetAllMenuItemsTextColor(navigationView);
 
         } else if (id == R.id.step3_on) {
             fragment = new StepThreeOnFragment();
@@ -213,8 +211,10 @@ public class MainActivity extends AppCompatActivity
 
 
         if (fragment!= null) {
+            fm.popBackStack(fragment.getClass().getSimpleName(), FragmentManager.POP_BACK_STACK_INCLUSIVE);
+            FragmentTransaction ft = fm.beginTransaction();
             ft.replace(R.id.flContent, fragment);
-            // ft.addToBackStack(null);
+            ft.addToBackStack(fragment.getClass().getSimpleName());
             ft.commit();
         }
 
